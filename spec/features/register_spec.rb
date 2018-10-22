@@ -15,7 +15,7 @@ feature "Registering with virtual application", js: true do
     @register_page.lastname_field.set 'Pastukh'
     @register_page.email_field.set "pastukhn#{time}@gmail.com"
     #@register_page.hidemyemailaddress_checkbox.uncheck
-    #@register_page.language_dropdown.select("Ukrainian (Українська)", :from => "language_dropdown")
+    #register_page.language_dropdown.select("Ukrainian (Українська)", :from => "language_dropdown")
     @register_page.submit_button.click
     expect(page).to have_content 'Redmine'
   end
