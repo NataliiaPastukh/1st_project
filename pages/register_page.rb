@@ -7,8 +7,8 @@ class RegisterPage < SitePrism::Page
   element :firstname_field, '#user_firstname'
   element :lastname_field, '#user_lastname'
   element :email_field, '#user_mail'
-  element :hidemyemailaddress_checkbox, :xpath, '//*[@id="pref_hide_mail"]'
-  element :language_dropdown, :xpath, '//*[@id="user_language"]'
+  element :hidemyemailaddress_checkbox, '#pref_hide_mail'#:xpath, '//*[@id="pref_hide_mail"]'
+  element :language_dropdown, '#user_language'#:xpath, '//*[@id="user_language"]'
   element :submit_button, :xpath, '//*[@id="new_user"]/input[3]'
 
 end
