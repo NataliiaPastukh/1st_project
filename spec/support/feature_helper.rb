@@ -20,7 +20,7 @@ module FeatureHelper
   def login_user(user)
     @login_page = LoginPage.new
     @login_page.load
-    @login_page.login_field.set "pastukhn#{new_timestamp}"
+    @login_page.login_field.set user
     @login_page.password_field.set 'Qwerty12345!'
     @login_page.login_button.click
     expect(page).to have_content "Logged in as pastukhn"
