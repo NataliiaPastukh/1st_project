@@ -1,5 +1,5 @@
 class LoginPage < SitePrism::Page
-  set_url 'http://10.33.40.54/login'
+  set_url 'http://10.33.40.219/login'
 
   element :login_field, :xpath,'//*[@id="username"]'
   element :password_field, '#password'

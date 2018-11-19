@@ -1,5 +1,5 @@
 class RegisterPage < SitePrism::Page
-  set_url 'http://10.33.40.54/account/register'
+  set_url 'http://10.33.40.219/account/register'
 
   element :login_field, '#user_login'
   element :password_field, '#user_password'
