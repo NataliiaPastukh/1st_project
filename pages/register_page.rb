@@ -1,6 +1,8 @@
 class RegisterPage < SitePrism::Page
   set_url 'http://10.33.40.219/account/register'
 
+  # section menu, MenuSection, :xpath, '//*[@id="top-menu"]'
+
   element :login_field, '#user_login'
   element :password_field, '#user_password'
   element :confirmation_field, '#user_password_confirmation'
